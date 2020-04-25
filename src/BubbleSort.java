@@ -1,27 +1,14 @@
-import java.util.Scanner;
-
-public class Ex15 {
+public class BubbleSort {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Bubble sort");
-        System.out.println("Заполните массив:");
-        int[] arr = new int[5];
-        for(int i=0;i<arr.length; i++){
-            arr[i] = sc.nextInt();
-        }
+
+        int[] arr = {5,7,3,1,9,7,3,5,7};
         print(arr);
         sort(arr);
         print(arr);
     }
 
-    public static void print(int[] arr) {
-        for(int i = 0; i< arr.length; i++){
-            System.out.print(arr[i]+" ");
-        }
-        System.out.println();
-    }
-
     public static  void sort(int[] arr){
+
         boolean swaped;
         do{
             swaped = false;
@@ -35,5 +22,12 @@ public class Ex15 {
             }
 
         } while(swaped);
+    }
+
+    public static void print(int[] arr) {
+        for(int i = 0; i< arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
     }
 }
