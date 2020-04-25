@@ -8,24 +8,20 @@ public class SelectionSort {
     }
 
     public static  void sort(int[] arr){
-        int min = 0;
-        int cmin = min;
-     do {
 
-         for (int i = cmin+1; i < arr.length; i++) {
-             if (arr[i] < arr[cmin]) {
-                 cmin = i;
-             }
-         }
-         if(cmin!=min) {
-             int x = arr[min];
-             arr[min] = arr[cmin];
-             arr[cmin] = x;
-         }
-             min++;
-             cmin = min;
-
-     }while(min < arr.length-1);
+        for(int j =0; j<=arr.length -2; j++) {
+            int min = j;
+            for (int i = j + 1; i < arr.length; i++) {
+                if (arr[i] < arr[min]) {
+                    min = i;
+                }
+            }
+            if (j != min) {
+                int x = arr[min];
+                arr[min] = arr[j];
+                arr[j] = x;
+            }
+        }
     }
 
     public static void print(int[] arr) {

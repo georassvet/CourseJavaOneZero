@@ -1,9 +1,8 @@
-eeeeeeeeee
-wwwwwwwwwww
-wwwwwww
-wwwwwwwwwwwww
-wwwwwwwwwwwwww
-wwwwwwwwwwwwwwwwwww
-eeeeeeeeeeee
-rrrrrrrrrrrrrrrrrr
-wwwwwwwwwwwwwwwwwww
+Это простой пример, 
+ в котором мы осуществляем 
+ с помощью языка Java 
+ запись в файл 
+ и чтение из файла
+
+
+
